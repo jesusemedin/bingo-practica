@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BINGO</title>
+    <script type="text/javascript">
+
+    function letraramdon(minimo, maximo) {
+        var numeroletra = Math.floor( Math.random() * (maximo - minimo + 1) + minimo)
+        return numeroletra
+    };
+
+    function numeros(minimo, maximo) {
+        var numero = Math.floor( Math.random() * (maximo - minimo + 1) + minimo)
+        return numero
+    }
+
+     var B = 0;
+     var I = 1;
+     var N = 2;
+     var G = 3;
+     var O = 4;
+
+     var letrasaleatorias = letraramdon(0,4);
+
+     var letras = ["B","I","N","G","O"];
+
+     //alert("Letra: " + letras[letrasaleatorias]);
+
+     if (letrasaleatorias == 0 ) 
+     {
+         alert("Letra: " + letras[letrasaleatorias] + " Numero: " + numeros(0,15));
+     }
+     else if (letrasaleatorias == 1) 
+     {
+         alert("Letra: " + letras[letrasaleatorias] + " Numero: " + numeros(16, 30));
+     }
+     else if (letrasaleatorias == 2)
+     {
+         alert("Letra: " + letras[letrasaleatorias] + " Numero: " + numeros(31, 45));
+     }
+     else if (letrasaleatorias == 3)
+     {
+         alert("Letra " + letras[letrasaleatorias] + " Numero: " + numeros(46, 60))
+     }
+     else if (letrasaleatorias == 4)
+     {
+         alert("Letra " + letras[letrasaleatorias] + " Numero: " + numeros(61, 75))
+     }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
