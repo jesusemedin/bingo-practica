@@ -3,24 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BINGO</title>
+    <title>B I N G O</title>
     <script type="text/javascript">
-
-    function letraramdon(minimo, maximo) {
+function sortearficha(){
+    function letraramdon(minimo, maximo)
+     {
         var numeroletra = Math.floor( Math.random() * (maximo - minimo + 1) + minimo)
         return numeroletra
-    };
+     };
 
     function numeros(minimo, maximo) {
         var numero = Math.floor( Math.random() * (maximo - minimo + 1) + minimo)
         return numero
-     }
+     };
 
-     //var B = 0;
-     //var I = 1;
-     //var N = 2;
-     //var G = 3;
-     //var O = 4;
+     //var B;
+     //var I;
+     //var N;
+     //var G;
+     //var O;
 
      var letrasaleatorias = letraramdon(0,4);
 
@@ -30,7 +31,7 @@
 
      if (letrasaleatorias == 0 ) 
      {
-         alert("Letra: " + letra[letrasaleatorias] + " Numero: " + numeros(0,15));
+         alert("Letra: " + letra[letrasaleatorias] + " Numero: " + numeros(1,15));
      }
      else if (letrasaleatorias == 1) 
      {
@@ -48,9 +49,12 @@
      {
          alert("Letra: " + letra[letrasaleatorias] + " Numero: " + numeros(61, 75))
      }
+};
+
     </script>
 </head>
 <body>
-
+<h1>El CPU sorteara las fichas del juego.</h1>
+<button onclick=sortearficha()>Sortear Ficha</button>
 </body>
 </html>
