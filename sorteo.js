@@ -1,14 +1,15 @@
 function sorteofichas()
     {
         //Creamos funcion que genere numeros aleatorios
+        //Asignamos esos numeros aleatorios a la vaariables numeros estableciendo parametros entre 0 y 75
+
+        var numero = random(0,75);
+
         function random(minimo,maximo)
         {
             var numerorandom = Math.floor(( Math.random() * (maximo - minimo ) + 1) + minimo)
             return numerorandom
         }
-
-        //Asignamos esos numeros aleatorios a la vaariables numeros estableciendo parametros entre 0 y 75
-        var numero = random(0,75)
         var letra;
 
         //Aplicamos condiciones al programa de la siguiente manera:
@@ -38,8 +39,8 @@ function sorteofichas()
         //Generamos una variable resultado para que sea llamada por la etiqueta
         //document.getElementById('resultado').innerHTML = resultado;
         // en HTML <p><div id="resultado">Aqui se mostrara el resultado</div></p>
-        var resultado =letra + "" + numero
 
+        var resultado =letra + "" + numero
 
         document.getElementById('resultado').innerHTML = resultado;
     }
