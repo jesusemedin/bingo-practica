@@ -9,6 +9,20 @@ return numerorandom
 var numeronuevo = random (0,75);
 var letra;
 
+var numeronuevo = random(0,75)
+    var usados = []
+    usados.push(numero)
+    var letra;
+    var resultado = usados
+
+    while(usados.length < 75)
+    {
+        var numero = random(0,75)
+        usados.push(numero)
+    }
+
+    console.log(usados)
+
 
 if (numeronuevo <= 15 ) 
     {
